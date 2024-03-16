@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form  >
+    <label for="fname">First Name:</label>
+    <input type="text" minlength="3" name="fname" id="fname">
+<br>
+
+    <label for="lname">LastName:</label>
+    <input type="text" name="lname" id="lname">
+
+<br>
+    <label for="psw">Password</label>
+    <input type="password" required maxlength="15" name="psw" id="psw">
+<br>
+<label for="mail">E-mail</label>
+<input type="email" name="mail" id="mail" placeholder="Your E-mail!"> <br/>
+
+
+<label for="genders">Your gender:</label>
+<input id="male"   type="radio" name="gender" value="M" >
+<label for="male">Male</label>
+<input id="female" type="radio" name="gender" value="F" >
+<label for="female">Femele</label>
+<input id="others" type="radio" name="gender" value="Other">
+<label for="others">Other</label> <br>
+
+<label for="birthDate">Birth Date</label> 
+<input id="birthDate" type="date" name="birthDate"> <br>
+
+
+<label for="age">Age</label>
+<input id="age" type="number" name="age">
+<br>
+<label for="cards">CardType:</label>
+<select name="card" id="cards">
+    <option value="Visa">Visa</option>
+    <option value="MasterCard">MasterCard</option>
+    <option value="Maestro">Maestro</option>
+</select> <br>
+    <label for="terms">Agreed with terms and conditions</label>
+    <input type="checkbox" id="terms"><br>
+    <button>Submit</button><br>
+    <input type="reset">
+</form>
+
+</body>
+</html>
