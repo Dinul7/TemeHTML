@@ -110,7 +110,8 @@ h1,h2,h3{
 }
 h2{
     color: #262626;
-    margin-top: 60px;
+    /* margin: 60px 0; */
+    margin-top:60px;
     
 }
 
