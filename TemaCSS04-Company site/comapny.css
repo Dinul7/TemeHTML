@@ -1,18 +1,28 @@
-*{
+/* *{
     box-sizing: border-box;
+} */
+
+
+
+body{
+    background-color: #ededed;
+    position: relative;
 }
+
+
 .site-container{
     width:1200px;
     border:3px solid orange;
-    padding: 30px;
-    height: 100vh;
+    /* padding: 30px; */
+    height: 150vh;
     background-color: white;
-   
+
+    margin-right: auto;
+    margin-left: auto;
+    
 
 }
-body{
-    background-color: #ededed;
-}
+
 
 
 
@@ -22,7 +32,9 @@ body{
     margin-bottom: 50px;
     border: 3px solid orange;
     box-sizing: border-box;
-    background-color: white;}
+    background-color: white;
+    position: static;
+}
 
 .logo{
     width: 55px;
@@ -47,27 +59,29 @@ nav a{
 h2{
     color: rgb(0,0,64);
     font-size: 36px;
+    margin-bottom: 35px;
 }
 .about-us{
     
     border: 3px solid black;
-    height: 300px;
-    padding: 15px;
+    height: 450px;
+    padding: 50px;
+    margin-bottom: 50px;
 }
 
 
 
 .about {
-    float: left;
-    width:70%;
-    padding: 5px;
+    /* float: left; */
+    width:60%;
+    
     line-height: 1.25;
     
 }
 
 
 
-main img{
+.au-img{
     width: 300px;
     float: right;
   
@@ -75,7 +89,86 @@ main img{
   
   
 }
-
-.about-us{
-    position: relative;
+.au{
+    margin-top: -325px;
 }
+
+/* .about-us{
+    position: relative;
+} */
+
+.our-projects{
+  
+ 
+ border: 3px solid black;
+}
+
+
+
+.photo-container{
+    box-sizing: border-box;
+   
+}
+/* .project-1{
+    
+    height: 400px;
+    border: 1px solid black;
+    
+}
+.project-2{
+    
+    height: 400px;
+    border: 1px solid black;
+  
+   
+}
+
+
+.project-3{
+
+  height: 800px;
+  border: 1px solid black;
+float: right;
+margin-top: -407px;
+  
+} */
+
+.photo1-2 img{
+ 
+    width:49% ;
+    height: 400px;
+    border: 1px solid black;
+}
+.photo2 img{
+    object-fit: fill;
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    top: 0;
+   
+    
+
+}
+
+
+
+/* 
+.photo3 img{
+    width: 400px;
+    height: 800px;
+    border: 1px solid black;
+    float:right;
+    margin-top: -400px;
+    margin-left: -100px;
+   
+} */
+
+.project-3{
+    width: 400px;
+    height: 800px;
+    border: 1px solid black;
+    float: right;
+  };
+
+
+
