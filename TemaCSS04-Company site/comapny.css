@@ -85,6 +85,13 @@ h2{
     padding: 15px;
 }
 
+.about:hover{
+    transform: scale(1.5) translateY(30px) translateX(145px);
+    background-color: rgb(104, 11, 104);
+    color: white;
+    transition: all 1s ease-in;
+    border-radius: 5px;
+}
 
 
 .au-img{
@@ -107,6 +114,15 @@ h2{
     transition: all 1s ease;
 
 }
+
+.photo2:hover{
+    transform: translateX(188px) translateY(-200px) scaleX(1.335) scaleY(2);
+    transition: all 1s ease;
+
+}
+
+
+
 
 
 .au{
@@ -206,12 +222,20 @@ h2{
 
 } 
 
+.up-btn:hover{
+    transform: scale(1.5) rotate(2turn);
+    border-radius: 50%;
+    transition: all .80s ease;
+}
+
 
 
 .service:hover{
     transform: scale(1.2);
-    transition: all .5s ease;
-    background-color: aliceblue;
+    transition: all .7s ease-in-out;
+    background-color: #ededed;
+    border: none;
+    border-radius: 20%;
     
 }
 
