@@ -92,9 +92,22 @@ h2{
     float: right;
     padding: 10px;
     border: 3px solid black;
-  
-  
+   
 }
+
+.au:hover{
+    transform: rotate(5deg);
+    transition: all 1s ease;
+    
+   
+}
+
+.photo1:hover{
+    transform: translateX(189px) translateY(200px) scaleX(1.33) scaleY(2);
+    transition: all 1s ease;
+
+}
+
 
 .au{
     margin-top: -285px;
@@ -146,6 +159,7 @@ h2{
     display: flex;
     align-content: space-between;
     
+    
 }
 .service{
     border: 5px solid black;
@@ -191,5 +205,14 @@ h2{
     font-size: 32px;
 
 } 
+
+
+
+.service:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
+    background-color: aliceblue;
+    
+}
 
 
