@@ -63,6 +63,8 @@ header {
   margin-bottom: 80px;
   margin-top: 50px;
   width: 100vw; }
+  .comunicate .row {
+    margin-left: 25px; }
   .comunicate h5 {
     padding: 15px;
     padding-left: 0px;
@@ -71,7 +73,7 @@ header {
     letter-spacing: 1.5px;
     margin-bottom: 20px; }
   .comunicate .col {
-    min-width: 280px;
+    min-width: 360px;
     border: 1px solid black;
     padding: 0;
     height: 350px;
@@ -85,7 +87,8 @@ header {
       border-top-right-radius: 8px; }
     .comunicate .col p {
       font-weight: bold;
-      color: #445566; }
+      color: #445566;
+      text-align: center; }
   .comunicate_btn {
     display: inline-block;
     background-color: #F8A23F;
@@ -98,13 +101,96 @@ header {
     letter-spacing: 1px; }
 
 .proceduri {
+  width: 100vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #EFF5F5; }
+  .proceduri .arrow {
+    background-color: #F8A23F;
+    color: white;
+    background-size: 4px;
+    font-size: 10px;
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .proceduri .container .row {
+    margin-left: 20px; }
+  .proceduri .container > p {
+    color: #778899;
+    font-weight: 600; }
+    .proceduri .container > p a {
+      text-decoration: none;
+      color: #445566; }
+  .proceduri .container h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
+  .proceduri .col {
+    height: 80px;
+    min-width: 300px;
+    box-shadow: -5px 5px 9px -8px #000;
+    margin-bottom: 25px;
+    margin-right: 70px;
+    text-decoration: none;
+    line-height: 0.8;
+    border-radius: 10px;
+    background: #fff;
+    position: relative; }
+    .proceduri .col h6 {
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+      letter-spacing: -0.5px;
+      margin-top: 10px; }
+    .proceduri .col p {
+      color: #778899; }
+  .proceduri .col:hover .arrow {
+    width: 70px; }
+  .proceduri .col:hover h6 {
+    color: #F8A23F; }
+
+.registratura h5 {
+  padding: 15px;
+  padding-left: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px; }
 
 .socialMedia {
   background-color: #EFF5F5; }
+  .socialMedia h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
+
+.newsletter h5 {
+  padding: 15px;
+  padding-left: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px; }
 
 .platformaNationala {
   background-color: #EFF5F5; }
+  .platformaNationala h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
 
 * {
   box-sizing: border-box;

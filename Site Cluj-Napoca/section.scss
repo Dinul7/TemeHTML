@@ -4,7 +4,9 @@
     margin-top: 50px;
     width: 100vw;
    
-   
+   .row{
+    margin-left: 25px;
+   }
     h5{
 
         padding: 15px;
@@ -15,7 +17,7 @@
         margin-bottom: 20px;
     }
   .col{
-    min-width: 280px;
+    min-width: 360px;
     border: 1px solid black;
     padding: 0;
     height: 350px;
@@ -37,6 +39,7 @@
     p{
         font-weight: bold;
         color: #445566;
+        text-align: center;
     }
   }
 
@@ -56,13 +59,137 @@
 }
 
 .proceduri{
+    width: 100vw;
+    .arrow{
+        background-color: #F8A23F;
+        color: white;
+        background-size: 4px;
+        font-size: 10px;
+        width: 60px;
+        height: 80px;
+        position: absolute;
+        top:0;
+        right: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color:#EFF5F5 ;
+    .container{
+        .row{
+            margin-left: 20px;
+        }
+
+        &>p{
+            color: #778899;
+            font-weight: 600;
+            a{
+                text-decoration: none;
+                color: #445566;
+            }
+    }
+    h5{
+
+        padding: 15px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+    
+    }
+    
+    .col{
+        height: 80px;
+        min-width: 300px;
+        box-shadow: -5px 5px 9px -8px #000;
+        margin-bottom: 25px;
+        margin-right: 70px;
+        text-decoration: none;
+        line-height: 0.8;
+        border-radius: 10px;
+        background: #fff;
+        position: relative;
+        
+        
+            h6{
+                font-weight: bold;
+                font-size:20px;
+                color: black;
+                letter-spacing: -0.5px;
+                margin-top: 10px;
+            }
+
+            p{
+                color: #778899;
+              
+               
+            }
+
+            
+    }
+
+    .col:hover{
+        .arrow{
+            width: 70px;
+        }
+        h6{
+            color: #F8A23F;
+        }
+    }
+}
+
+.registratura{
+    h5{
+
+        padding: 15px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
 }
 
 .socialMedia{
     background-color:#EFF5F5 ;
+    h5{
+
+        padding: 15px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+}
+
+.newsletter{
+    h5{
+
+        padding: 15px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
 }
 
 .platformaNationala{
     background-color:#EFF5F5;
+    h5{
+
+        padding: 15px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
 }
+
+
