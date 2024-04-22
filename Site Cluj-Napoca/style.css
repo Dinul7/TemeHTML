@@ -1,16 +1,10 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif; }
-  * .child {
-    padding: 0;
-    margin: 0; }
-
 body {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  background-color: #fff; }
 
 header {
-  background-color: #112233; }
+  background-image: linear-gradient(#25292d, #23384c, #25292d); }
   header .navig {
     text-align: center; }
     header .navig-logo {
@@ -30,8 +24,8 @@ header {
         header .navig-items .navig-item a {
           text-decoration: none;
           color: white;
-          margin-left: 65px;
-          margin-right: 65px;
+          margin-left: 4vw;
+          margin-right: 4vw;
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 1px;
@@ -43,7 +37,7 @@ header {
     header .navig-search {
       display: inline-block; }
       header .navig-search #leng {
-        width: 300px;
+        width: 12vw;
         height: 35px;
         border-radius: 7px; }
     header .navig .icon {
@@ -51,3 +45,70 @@ header {
       height: 30px;
       width: 20px;
       color: #abb8c3; }
+  header .head-rest {
+    text-align: center;
+    padding: 10px; }
+    header .head-rest h1 {
+      color: white;
+      font-family: 'Libre Baskerville';
+      font-weight: 700;
+      font-size: 50px; }
+    header .head-rest h6 {
+      color: #888484;
+      font-size: 12px;
+      letter-spacing: 0.5;
+      font-weight: 700; }
+
+.comunicate {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  width: 100vw; }
+  .comunicate h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
+  .comunicate .col {
+    min-width: 280px;
+    border: 1px solid black;
+    padding: 0;
+    height: 350px;
+    margin-right: 8px;
+    border-radius: 8px;
+    margin-bottom: 60px; }
+    .comunicate .col img {
+      height: 150px;
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+    .comunicate .col p {
+      font-weight: bold;
+      color: #445566; }
+  .comunicate_btn {
+    display: inline-block;
+    background-color: #F8A23F;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px; }
+
+.proceduri {
+  background-color: #EFF5F5; }
+
+.socialMedia {
+  background-color: #EFF5F5; }
+
+.platformaNationala {
+  background-color: #EFF5F5; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif; }
+  * .child {
+    padding: 0;
+    margin: 0; }
