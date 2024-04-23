@@ -1,7 +1,11 @@
 // Test file
-@import "./header.scss";
-@import "section.scss";
+@import "header.scss";
+@import "sections.scss";
+@import "footer.scss";
 
+body{
+  position: relative;
+}
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;

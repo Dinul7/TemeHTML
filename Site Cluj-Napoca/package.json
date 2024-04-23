@@ -12,6 +12,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   }
 }

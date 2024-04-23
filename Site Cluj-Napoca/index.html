@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 </head>
 <body>
     <header>
-      <nav class="navig">
+      <nav class="navig" id="navig">
         <div class="navig-logo">
           <img src="https://files.primariaclujnapoca.ro/2017/10/primaria-si-consiliul-local-cluj-napoca.png" alt="">
         </div>
@@ -80,7 +81,7 @@
             <p>Actiune de dezinsectie a domeniului publie si privat al municipiului Cluj-Napoca si spatii deschise ale persoanelor fizice si juridice</p>
           </div>
         </div>
-        <button class="comunicate_btn">VEZI TOATE COMUNICATELE</button>
+        <a href="#" class="comunicate_btn">VEZI TOATE COMUNICATELE</a>
       </div>
     </section>
 
@@ -97,38 +98,38 @@
             <p>aplicatia MyCluj</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-20 0 70 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
-          <div class="col">
+          <a href="#" class="col">
             <h6>Plati online</h6>
             <p>fara autentificare</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
 
-          </div>
-          <div class="col">
+          </a>
+          <a href="#" class="col">
             <h6>Acte de identitate</h6>
             <p>programare depuneri cereri</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
 
-          </div>
+          </a>
         </div>
         <div class="row">
-          <div class="col">
+          <a href="#" class="col">
             <h6>Stare civila</h6>
             <p>programare casatorii</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
 
-          </div>
-          <div class="col">
+          </a>
+          <a href="#" class="col">
             <h6>Cerere parcare</h6>
             <p>depunere cerere</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
 
-          </div>
-          <div class="col">
+          </a>
+          <a href="#" class="col">
             <h6>Tichetul albastru</h6>
             <p>comunicare online cu cet</p>
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
 
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -140,24 +141,148 @@
 
 
     <section class="registratura">
-      <img src="https://files.primariaclujnapoca.ro/page/2022/06/22/illustration-registratura.svg" alt="">
-      <h5>REGISTRATURA</h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img src="https://files.primariaclujnapoca.ro/page/2022/06/22/illustration-registratura.svg" alt="">
+          </div>
+          <div class="col-8">
+            <h5>REGISTRATURA</h5>
+            <div class="row">
+              <div class="col">
+                <p>Vrei sa depui o cerere?</p>
+                <p>Ai peste 140 de formulare online</p>
+                <a href="#" class="seeAll">VEZI TOATE FORMULARELE</a>
+              </div>
+              <div class="col">
+                <p>Ai depus deja o cerere?</p>
+                <p>Poti verifica stadiul cererii online</p>
+                <a href="#" class="seeAll">VERIFICA STADIUL CERERII</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </section>
+
+
+
+
     <section class="socialMedia">
       <h5>SOCIAL MEDIA</h5>
     </section>
-    <section class="newsletter">
-      <h5>NEWSLETTER</h5>
 
-      <img src="https://files.primariaclujnapoca.ro/page/2022/06/22/illustration-newsletter.svg" alt="">
+
+
+
+
+
+
+    <section class="newsletter">
+        <div class="container">
+
+          <h5>NEWSLETTER</h5>
+        <div class="row">
+          <div class="col">
+            <p>Aboneaza-te pentru a fii la curent cu informatiile din orasul tau</p>
+          </div>
+          <div class="col">
+           
+            <label for="nume">NUME</label>
+            <br>
+            <input type="text" id="nume" required>
+            <br>
+            <label for="email">ADRESA DE EMAIL</label>
+            <br>
+            <input type="email" id="email" required>
+            <div class="check">
+              <input type="checkbox" id="checked">
+              <label for="checked">Sunt de acord cu prelucrarea datelor personale</label>
+            </div>
+            <button>ABONEAZA-MA</button>
+          </div>
+          <div class="col">
+            <img src="https://files.primariaclujnapoca.ro/page/2022/06/22/illustration-newsletter.svg" alt="">
+          </div>
+        </div>
+      </div>
+      
     </section>
+
+
+
+
+
+
+
+
     <section class="platformaNationala">
-      <h5>PLATFORMA NATIONALA DE PREGATIRE PENTRU SITUATII DE URGENTA</h5>
+      <div class="container">
+        <div class="row">
+          <h5>PLATFORMA NATIONALA DE PREGATIRE PENTRU SITUATII DE URGENTA</h5>
+
+        </div>
+        <div class="row">
+          <a href="#" class="col-2">
+            <h6>Fii pregatit</h6>
+            <p>pentru situatii de urgenta</p>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-17 0 60 25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+
+            
+          </a>
+        </div>
+      </div>
     </section>
   </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h6>DATE DE CONTACT</h6>
+            <p>str. Moților nr.3, 400001 Cluj-Napoca,</br>
+              Cluj, România </p>
+              <p>registratura@primariaclujnapoca.ro</p>
+              <p>Comunicare carte de identitate conform Legii 9/2023: carte_identitate@primariaclujnapoca.ro</p>
+              <p>0264 <span>984</span></p>
+              <p>0264 596 030 - Centrala telefonica</p>
+          </div>
+          <div class="col">
+            <h6>LINKURI UTILE</h6>
+            <ul>
+              <li><a href="#">Visit Cluj</a></li>
+              <li><a href="#">Cluj Business</a></li>
+              <li><a href="#">Bugetare Participativa</a></li>
+              <li><a href="#">CTP Cluj-Napoca</a></li>
+              <li><a href="#">Sport in Cluj-Napoca</a></li>
+              <li><img src="https://files.primariaclujnapoca.ro/2022/04/05/sts-112.png" alt=""><a href="#">Protectia datelor cu caracter personal</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p>Copiat cu bune intentii de catre Placintar Dinu</p>
+        </div>
+      </div>
+
+        <div class="chat-tab">
+        <svg data-slot="icon" fill="none" stroke-width="0.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+        </svg>
+        </div>
+        <a href="#navig" class="toTheTop">
+          <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5"></path>
+          </svg>
+        </a>
+    </footer>
+
 </body>
 </html>
+
+
+
+
 
 
 

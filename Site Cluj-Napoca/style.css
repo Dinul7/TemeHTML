@@ -24,8 +24,8 @@ header {
         header .navig-items .navig-item a {
           text-decoration: none;
           color: white;
-          margin-left: 4vw;
-          margin-right: 4vw;
+          margin-left: 3vw;
+          margin-right: 2vw;
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 1px;
@@ -90,18 +90,17 @@ header {
       color: #445566;
       text-align: center; }
   .comunicate_btn {
-    display: inline-block;
     background-color: #F8A23F;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-decoration: none; }
 
 .proceduri {
-  width: 100vw;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #EFF5F5; }
@@ -156,13 +155,29 @@ header {
   .proceduri .col:hover h6 {
     color: #F8A23F; }
 
-.registratura h5 {
-  padding: 15px;
-  padding-left: 0px;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  margin-bottom: 20px; }
+.registratura {
+  padding-top: 60px;
+  padding-bottom: 100px; }
+  .registratura .container .row .col-4 {
+    padding-left: 70px; }
+  .registratura .container .row h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px; }
+  .registratura .container .col p {
+    font-weight: 700;
+    color: #778899; }
+  .registratura .container .col .seeAll {
+    background-color: #F8A23F;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-decoration: none; }
 
 .socialMedia {
   background-color: #EFF5F5; }
@@ -174,23 +189,164 @@ header {
     letter-spacing: 1.5px;
     margin-bottom: 20px; }
 
-.newsletter h5 {
-  padding: 15px;
-  padding-left: 0px;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  margin-bottom: 20px; }
+.newsletter {
+  padding-top: 30px;
+  padding-bottom: 70px; }
+  .newsletter .container h5 {
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 0; }
+  .newsletter .container .row .col > p {
+    margin-top: 35px;
+    color: #778899;
+    font-weight: 600;
+    letter-spacing: 0.8; }
+  .newsletter .container .row .col label {
+    color: #AABBCC;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px; }
+    .newsletter .container .row .col label:last-child {
+      color: #000;
+      margin-bottom: 25px;
+      font-weight: normal; }
+  .newsletter .container .row .col input:not(:last-of-type), .newsletter .container .row .col #nume, .newsletter .container .row .col #email {
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #96b8b8;
+    box-shadow: 3px 3px 10px -1px #96b8b8; }
+  .newsletter .container .row .col button {
+    background-color: #F8A23F;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px; }
 
 .platformaNationala {
-  background-color: #EFF5F5; }
-  .platformaNationala h5 {
+  background-color: #EFF5F5;
+  padding: 65px;
+  padding-bottom: 100px; }
+  .platformaNationala .container .row h5 {
     padding: 15px;
     padding-left: 0px;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 20px; }
+  .platformaNationala .container .row .col-2 {
+    height: 80px;
+    width: 350px;
+    box-shadow: -5px 5px 9px -8px #000;
+    margin-bottom: 25px;
+    margin-right: 70px;
+    text-decoration: none;
+    line-height: 0.8;
+    border-radius: 10px;
+    background: #fff;
+    position: relative; }
+    .platformaNationala .container .row .col-2 h6 {
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+      letter-spacing: -0.5px;
+      margin-top: 10px; }
+    .platformaNationala .container .row .col-2 p {
+      color: #778899; }
+    .platformaNationala .container .row .col-2 .arrow {
+      background-color: #F8A23F;
+      color: white;
+      background-size: 4px;
+      font-size: 10px;
+      width: 60px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+    .platformaNationala .container .row .col-2:hover .arrow {
+      width: 70px; }
+    .platformaNationala .container .row .col-2:hover h6 {
+      color: #F8A23F; }
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(#25292d, #23384c, #25292d); }
+  footer .chat-tab svg {
+    position: fixed;
+    box-sizing: border-box;
+    fill: white;
+    stroke: #1099FF;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #1099FF;
+    padding: 15px;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 1; }
+  footer .toTheTop svg {
+    position: fixed;
+    stroke: #ededee;
+    background-color: #778899;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 75px;
+    height: 60px;
+    padding: 10px;
+    bottom: 0px;
+    right: 115px;
+    cursor: pointer; }
+    footer .toTheTop svg:hover {
+      background-color: #25292d; }
+  footer .row .col h6 {
+    font-size: 14px;
+    color: #617486;
+    margin-bottom: 30px; }
+  footer .row .col p {
+    color: #778899;
+    margin-bottom: 8px; }
+  footer .row .col span {
+    font-size: 40px;
+    font-weight: bold; }
+  footer .row .col ul {
+    padding: 0; }
+    footer .row .col ul li {
+      font-size: 16px;
+      list-style: none;
+      margin-bottom: 25px;
+      margin-left: 0px; }
+      footer .row .col ul li a {
+        text-decoration: none;
+        color: #778899;
+        font-weight: 600; }
+      footer .row .col ul li img {
+        width: 30px;
+        margin-right: 10px; }
+  footer .row:last-child {
+    font-size: 14px;
+    color: #778899;
+    margin-top: 20px;
+    float: right;
+    margin-right: 300px; }
+
+body {
+  position: relative; }
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,108 @@
+footer{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-image:linear-gradient(rgb(37,41,45),rgb(35,56,76),rgb(37,41,45));
+    
+
+   
+    .chat-tab{
+
+        svg{
+             position: fixed;
+             
+             box-sizing: border-box;
+             fill: white;
+             stroke:#1099FF;
+             color: white;
+             
+             border-radius: 50%;
+             width: 100px;
+             height: 100px;
+             text-align: center;
+             background-color: #1099FF;
+             padding: 15px;
+             bottom: 40px;
+             right: 40px;
+             cursor: pointer;
+             z-index: 1;
+         }
+    }
+    .toTheTop{
+
+        svg{
+            position: fixed;
+            stroke: #ededee;;
+            background-color: #778899;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 75px;
+            height: 60px;
+            padding: 10px;
+            bottom: 0px;
+            right: 115px;
+            cursor: pointer;
+
+            &:hover{
+                background-color:rgb(37,41,45);
+            }
+        }
+    }
+
+
+       
+
+   
+
+  
+    
+    .row{
+        .col{
+
+            h6{
+                font-size: 14px;
+                color: #617486;
+                margin-bottom: 30px;
+            }
+
+            p{
+                color: #778899;
+                margin-bottom: 8px;
+            }
+
+            span{
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            ul{
+                padding: 0;
+                li{
+                    font-size: 16px;
+                    list-style: none;
+                    margin-bottom: 25px;
+                    margin-left: 0px;
+                    a{
+                        text-decoration: none;
+                        color: #778899;
+                        font-weight: 600;
+                    }
+                    img{
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+
+                    
+                }
+            }
+        }
+
+        &:last-child{
+            font-size: 14px;
+            color: #778899;
+            margin-top: 20px;
+            float: right;
+            margin-right: 300px;
+        }
+    }
+
+}
