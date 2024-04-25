@@ -59,6 +59,23 @@ header {
       letter-spacing: 0.5;
       font-weight: 700; }
 
+@media only screen and (max-width: 600px) {
+  header .navig-items {
+    padding: 0; }
+    header .navig-items .navig-item:nth-child(4) {
+      border-left: 1px solid #888484; }
+    header .navig-items .navig-item:nth-child(2n-1) {
+      border: none;
+      border-right: 1px solid #888484; }
+      header .navig-items .navig-item:nth-child(2n-1):last-child {
+        border-left: 1px solid #888484; }
+      header .navig-items .navig-item:nth-child(2n-1):first-child {
+        border-left: 1px solid #888484; }
+  header .navig-search #leng {
+    width: 280px; }
+  svg {
+    margin-left: 0px; } }
+
 .comunicate {
   margin-bottom: 80px;
   margin-top: 50px; }
@@ -133,7 +150,7 @@ header {
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 20px; }
-  .proceduri .col {
+  .proceduri .col-sm {
     height: 80px;
     min-width: 300px;
     box-shadow: -5px 5px 9px -8px #000;
@@ -144,13 +161,13 @@ header {
     border-radius: 10px;
     background: #fff;
     position: relative; }
-    .proceduri .col h6 {
+    .proceduri .col-sm h6 {
       font-weight: bold;
       font-size: 20px;
       color: black;
       letter-spacing: -0.5px;
       margin-top: 10px; }
-    .proceduri .col p {
+    .proceduri .col-sm p {
       color: #778899; }
   .proceduri .col:hover .arrow {
     width: 70px; }
@@ -187,74 +204,84 @@ header {
     .registratura .container .row .col img {
       padding-left: 70px; }
 
+@media (max-width: 880px) {
+  .registratura .container .row .col {
+    margin-left: 150px;
+    margin-top: 50px; }
+    .registratura .container .row .col img {
+      padding: 0; } }
+
 .socialMedia {
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 170px;
   background-color: #EFF5F5; }
-  .socialMedia .container {
-    padding: 0; }
-    .socialMedia .container h5 {
-      padding-left: 0px;
-      font-size: 24px;
+  .socialMedia .container h5 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px; }
+  .socialMedia .container .row {
+    margin: 0; }
+    .socialMedia .container .row .col-sm-4 {
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #96b8b8;
+      box-shadow: 3px 3px 10px -1px #96b8b8;
+      padding: 0;
+      height: 432px;
+      margin-right: 10px; }
+      .socialMedia .container .row .col-sm-4-instagram {
+        padding: 10px; }
+        .socialMedia .container .row .col-sm-4-instagram a {
+          text-decoration: none; }
+        .socialMedia .container .row .col-sm-4-instagram svg {
+          margin-left: 10px; }
+        .socialMedia .container .row .col-sm-4-instagram p {
+          display: inline-block;
+          font-weight: bold;
+          margin-left: 20px;
+          color: #000; }
+      .socialMedia .container .row .col-sm-4-imag img {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+    .socialMedia .container .row .col-sm-4 {
+      border: 1px solid #96b8b8;
+      box-shadow: 3px 3px 10px -1px #96b8b8;
+      padding: 0;
+      margin-right: 20px; }
+      .socialMedia .container .row .col-sm-4 > iframe {
+        margin: 0;
+        width: 100%;
+        height: 538px; }
+    .socialMedia .container .row .col-sm-3 a {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      display: inline-block;
+      background-color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #96b8b8;
+      box-shadow: 3px 3px 10px -1px #96b8b8;
+      border-bottom: none; }
+    .socialMedia .container .row .col-sm-3 .youtube img {
+      width: 45px;
+      height: 45px; }
+    .socialMedia .container .row .col-sm-3 .youtube p {
+      display: inline-block;
       font-weight: bold;
-      letter-spacing: 1.5px; }
-    .socialMedia .container .row {
-      margin: 0; }
-      .socialMedia .container .row .col-3 {
-        border-radius: 10px;
-        height: 100%;
-        background-color: #fff;
-        padding: 0;
-        width: 350px; }
-        .socialMedia .container .row .col-3 > * {
-          border-radius: 10px; }
-        .socialMedia .container .row .col-3:nth-child(2) {
-          padding: 5px;
-          width: 498px;
-          object-fit: fill;
-          margin: 0px 25px 0px 25px; }
-        .socialMedia .container .row .col-3-instaWrap {
-          text-decoration: none;
-          display: inline-block;
-          width: 100%;
-          height: 20%; }
-        .socialMedia .container .row .col-3-instagram {
-          padding: 10px; }
-          .socialMedia .container .row .col-3-instagram svg {
-            margin-left: 10px; }
-          .socialMedia .container .row .col-3-instagram p {
-            display: inline-block;
-            font-weight: bold;
-            margin-left: 20px;
-            color: #000;
-            text-decoration: none; }
-        .socialMedia .container .row .col-3:first-of-type img {
-          width: 100%;
-          border-top-left-radius: 0px;
-          border-top-right-radius: 0px; }
-        .socialMedia .container .row .col-3-youtubeWrap {
-          background-color: #fff;
-          text-decoration: none;
-          display: inline-block;
-          width: 100%;
-          height: 20%; }
-        .socialMedia .container .row .col-3-youtube {
-          padding: 10px; }
-          .socialMedia .container .row .col-3-youtube img {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%; }
-          .socialMedia .container .row .col-3-youtube p {
-            display: inline-block;
-            font-weight: bold;
-            margin-left: 20px;
-            color: #000;
-            text-decoration: none; }
-        .socialMedia .container .row .col-3 iframe {
-          width: 100%;
-          margin-bottom: -10px;
-          border-top-left-radius: 0px;
-          border-top-right-radius: 0px; }
+      margin-left: 20px;
+      color: #000; }
+    .socialMedia .container .row .col-sm-3 iframe {
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: 1px solid #96b8b8;
+      box-shadow: 3px 3px 10px -1px #96b8b8;
+      border-top: none; }
 
 .newsletter {
   padding-top: 30px;
@@ -347,6 +374,40 @@ header {
     .platformaNationala .container .row .col-2:hover h6 {
       color: #F8A23F; }
 
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    text-align: center; }
+  .comunicate .row {
+    margin: 0; }
+  .proceduri .container .row {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .newsletter .container .row .col button {
+    margin-bottom: 30px; }
+  .newsletter .container .row .col #nume, .newsletter .container .row .col #email {
+    width: 360px; }
+  .registratura .container .row {
+    justify-content: center; }
+    .registratura .container .row .col {
+      margin: 0;
+      margin-bottom: 25px; }
+  .socialMedia .container {
+    width: 100%; }
+    .socialMedia .container .row {
+      flex-wrap: wrap; }
+      .socialMedia .container .row .col-sm-4 {
+        margin-bottom: 70px; }
+      .socialMedia .container .row .col-sm-3 {
+        margin-top: 80px; }
+  .platformaNationala .container .row a {
+    max-width: none; }
+    .platformaNationala .container .row a .col-2 {
+      margin: 0;
+      width: 200px;
+      margin-right: 20px;
+      padding: 0; } }
+
 footer {
   padding-top: 30px;
   padding-bottom: 70px;
@@ -411,6 +472,21 @@ footer {
     margin-top: 20px;
     float: right;
     margin-right: 300px; }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-bottom: 190px; }
+    footer .chat-tab svg {
+      width: 80px;
+      height: 80px;
+      bottom: 30px; }
+    footer .toTheTop svg {
+      width: 65px;
+      height: 50px;
+      right: 100px; }
+    footer .row:last-child {
+      margin: 0;
+      margin-top: 30px; } }
 
 * {
   box-sizing: border-box;

@@ -106,3 +106,43 @@ body{
     }
   
   }
+
+
+
+  @media only screen and (max-width: 600px){
+    header{
+      .navig{
+        &-items{
+         
+          padding: 0;
+          .navig-item:nth-child(4){
+            border-left:1px solid #888484
+          }
+         .navig-item:nth-child(2n-1){
+          border: none;
+          // border-left: 1px solid #888484;
+          border-right: 1px solid #888484;
+          &:last-child{
+            border-left:1px solid #888484
+          }
+          &:first-child{
+            border-left:1px solid #888484
+          }
+        
+          
+         }
+        }
+      }
+
+      .navig-search{
+        #leng{
+          width: 280px;
+        }
+      }
+    }
+
+    svg{
+      margin-left: 0px;
+    }
+
+  }

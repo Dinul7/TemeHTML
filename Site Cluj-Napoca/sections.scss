@@ -108,7 +108,7 @@
     
     }
     
-    .col{
+    .col-sm{
         height: 80px;
         min-width: 300px;
         box-shadow: -5px 5px 9px -8px #000;
@@ -188,6 +188,7 @@
                 
                 & img{
                     padding-left: 70px;
+                
                 }
             }
 
@@ -196,108 +197,125 @@
     }
 }
 
-// @media(min-width:991px){
-//     .registratura .row .col{
-//         margin-bottom: 55px;
-//         margin-right: 80px;
+@media (max-width:880px){
+    .registratura{
+        .container{
+            .row{
+                .col{
+                    margin-left: 150px;
+                    margin-top: 50px;
+
+                    img{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// @media (max-width:1200){
+//     .registratura{
+//         .container{
+//             .row{
+//                &:last-of-type .col{
+//                 margin-left: 325px;
+//                }
+//             }
+//         }
 //     }
 // }
 
 
-
-
-
-
-
 .socialMedia{
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 170px;
     background-color:#EFF5F5 ;
     .container{
-        padding: 0;
-        
         h5{
-
-            
-            padding-left:0px ;
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            
+        margin-top: 30px;
+        margin-bottom: 70px;
+        padding-left:0px ;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.5px; 
         }
+
         .row{
             margin: 0;
-
-            .col-3{
-                border-radius: 10px;
-
-
-                & > *{
-                    border-radius: 10px;
-                }
-                
-
-                &:nth-child(2){
-                   padding: 5px;
-                    width: 498px;
-                    object-fit: fill;
-                    margin: 0px 25px 0px 25px;
-
-                }
-
-                height: 100%;
+            .col-sm-4{
                 background-color: #fff;
+                border-radius: 10px;
+                border: 1px solid #96b8b8;
+                box-shadow: 3px 3px 10px -1px #96b8b8;
                 padding: 0;
-                width: 350px;
+                height: 432px;
+                margin-right:10px ;
                
-               
-                
-                &-instaWrap{
-                    text-decoration: none;
-                    
-                    display: inline-block;
-                    width: 100%;
-                    height: 20%;
-                    
-                }
-
                 &-instagram{
-                    
                     padding: 10px;
-                    svg{
-                        margin-left: 10px;
-                    }
-                    p{
-                        display: inline-block;
-                        font-weight: bold;
-                        margin-left: 20px;
-                        color: #000;
+                    a{
                         text-decoration: none;
                     }
-                }
-                &:first-of-type img{
-                    width: 100%;
-                    border-top-left-radius: 0px;           
-                    border-top-right-radius: 0px;    
+                    svg{
+                    margin-left: 10px;
                     
-                }
-
-
-                &-youtubeWrap{
-                    background-color:#fff ;
-                    text-decoration: none;
+                    }
+                    p{
                     display: inline-block;
-                    width: 100%;
-                    height: 20%;
+                    font-weight: bold;
+                    margin-left: 20px;
+                    color: #000;
                     
-                    
+                    }
+
+                
                 }
-                &-youtube{
+                &-imag{
+                 img{
+                    width: 100%;
+
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                 }
+                }
+
+            }
+            .col-sm-4{
+                border: 1px solid #96b8b8;
+                box-shadow: 3px 3px 10px -1px #96b8b8;
+                padding: 0;
+                margin-right: 20px;
+                & > iframe{
+                    margin: 0;
+                    width: 100%;
+                    height: 538px;
+                }
+            }
+
+
+
+
+            
+            .col-sm-3{
+              
+                a{ 
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    display: inline-block;
+                    background-color: #fff;
+                    text-decoration: none;
                     padding: 10px;
+                    width: 100%;
+                    border: 1px solid #96b8b8;
+                    box-shadow: 3px 3px 10px -1px #96b8b8;
+                    border-bottom:none;
+                }
+                .youtube{
                     img{
-                        width:55px;
-                        height: 55px;
-                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
                         
                     }
                     p{
@@ -305,31 +323,35 @@
                         font-weight: bold;
                         margin-left: 20px;
                         color: #000;
-                        text-decoration: none;
                     }
-                }
-                
 
+
+                   
+
+
+
+                }
                 iframe{
                     width: 100%;
-                    margin-bottom: -10px;
-                    border-top-left-radius: 0px;           
-                    border-top-right-radius: 0px;           
-                    
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border: 1px solid #96b8b8;
+                    box-shadow: 3px 3px 10px -1px #96b8b8;
+                    border-top: none;
                 }
                 
-            
-              
-        
-            }
-            
+
+                
+
+            }   
+
         }
-
-
     }
- 
-}
 
+
+
+}
+    
 
 
 .newsletter{
@@ -474,3 +496,88 @@
 }
 
 
+@media only screen and (max-width: 500px){
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .comunicate{
+        .row{
+            margin: 0;
+        }
+    }
+
+    .proceduri{
+        .container{
+            .row{
+                margin-left:10px ;
+                margin-right:10px ;
+            }
+        }
+    }
+
+    .newsletter{
+        .container{
+           .row{
+
+            .col{
+                button{
+                    margin-bottom: 30px;
+                
+                }
+                #nume,#email{
+                    width: 360px;
+                }
+            }
+           }
+        }
+    }
+
+    .registratura{
+        .container{
+            .row{
+                justify-content: center;
+                
+                .col{
+                    margin: 0;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    .socialMedia{
+        .container{
+            width: 100%;
+            .row{
+                flex-wrap: wrap;
+
+                .col-sm-4{
+                    margin-bottom: 70px;
+                }
+
+                .col-sm-3{
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+
+    .platformaNationala{
+        .container{
+           .row{
+            a{
+                max-width: none;
+                .col-2{
+                    margin: 0;
+                    width: 200px;
+                    margin-right: 20px;
+                    padding: 0;
+                }
+            }
+           }
+        }
+    }
+}
