@@ -61,8 +61,7 @@ header {
 
 .comunicate {
   margin-bottom: 80px;
-  margin-top: 50px;
-  width: 100vw; }
+  margin-top: 50px; }
   .comunicate .row {
     margin-left: 25px; }
   .comunicate h5 {
@@ -72,20 +71,23 @@ header {
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 20px; }
-  .comunicate .col {
-    min-width: 360px;
+  .comunicate .col-4 {
+    width: 400px;
     border: 1px solid black;
     padding: 0;
     height: 350px;
-    margin-right: 8px;
+    margin-right: 35px;
     border-radius: 8px;
-    margin-bottom: 60px; }
-    .comunicate .col img {
+    margin-bottom: 60px;
+    display: inline-block; }
+    .comunicate .col-4:last-child {
+      margin-right: 0px; }
+    .comunicate .col-4 img {
       height: 150px;
       width: 100%;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px; }
-    .comunicate .col p {
+    .comunicate .col-4 p {
       font-weight: bold;
       color: #445566;
       text-align: center; }
@@ -156,38 +158,103 @@ header {
     color: #F8A23F; }
 
 .registratura {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 100px; }
-  .registratura .container .row .col-4 {
-    padding-left: 70px; }
-  .registratura .container .row h5 {
-    padding: 15px;
-    padding-left: 0px;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1.5px; }
-  .registratura .container .col p {
-    font-weight: 700;
-    color: #778899; }
-  .registratura .container .col .seeAll {
-    background-color: #F8A23F;
-    color: #fff;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    text-decoration: none; }
+  .registratura .container .row .col {
+    min-width: 440px;
+    min-height: 200px;
+    margin-top: 35px; }
+    .registratura .container .row .col h5 {
+      padding: 15px;
+      padding-left: 0px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1.5px; }
+    .registratura .container .row .col p {
+      font-weight: 700;
+      color: #778899; }
+    .registratura .container .row .col .seeAll {
+      background-color: #F8A23F;
+      color: #fff;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      text-decoration: none; }
+    .registratura .container .row .col:last-of-type h5 {
+      color: #fff; }
+    .registratura .container .row .col img {
+      padding-left: 70px; }
 
 .socialMedia {
+  padding-top: 40px;
+  padding-bottom: 70px;
   background-color: #EFF5F5; }
-  .socialMedia h5 {
-    padding: 15px;
-    padding-left: 0px;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px; }
+  .socialMedia .container {
+    padding: 0; }
+    .socialMedia .container h5 {
+      padding-left: 0px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1.5px; }
+    .socialMedia .container .row {
+      margin: 0; }
+      .socialMedia .container .row .col-3 {
+        border-radius: 10px;
+        height: 100%;
+        background-color: #fff;
+        padding: 0;
+        width: 350px; }
+        .socialMedia .container .row .col-3 > * {
+          border-radius: 10px; }
+        .socialMedia .container .row .col-3:nth-child(2) {
+          padding: 5px;
+          width: 498px;
+          object-fit: fill;
+          margin: 0px 25px 0px 25px; }
+        .socialMedia .container .row .col-3-instaWrap {
+          text-decoration: none;
+          display: inline-block;
+          width: 100%;
+          height: 20%; }
+        .socialMedia .container .row .col-3-instagram {
+          padding: 10px; }
+          .socialMedia .container .row .col-3-instagram svg {
+            margin-left: 10px; }
+          .socialMedia .container .row .col-3-instagram p {
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #000;
+            text-decoration: none; }
+        .socialMedia .container .row .col-3:first-of-type img {
+          width: 100%;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px; }
+        .socialMedia .container .row .col-3-youtubeWrap {
+          background-color: #fff;
+          text-decoration: none;
+          display: inline-block;
+          width: 100%;
+          height: 20%; }
+        .socialMedia .container .row .col-3-youtube {
+          padding: 10px; }
+          .socialMedia .container .row .col-3-youtube img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%; }
+          .socialMedia .container .row .col-3-youtube p {
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #000;
+            text-decoration: none; }
+        .socialMedia .container .row .col-3 iframe {
+          width: 100%;
+          margin-bottom: -10px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px; }
 
 .newsletter {
   padding-top: 30px;
@@ -344,9 +411,6 @@ footer {
     margin-top: 20px;
     float: right;
     margin-right: 300px; }
-
-body {
-  position: relative; }
 
 * {
   box-sizing: border-box;

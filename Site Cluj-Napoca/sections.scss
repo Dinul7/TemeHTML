@@ -2,7 +2,7 @@
 .comunicate{
     margin-bottom: 80px;
     margin-top: 50px;
-    width: 100vw;
+  
    
    .row{
     margin-left: 25px;
@@ -16,27 +16,32 @@
         letter-spacing: 1.5px;
         margin-bottom: 20px;
     }
-  .col{
-    min-width: 360px;
+  .col-4{
+    width: 400px;
     border: 1px solid black;
     padding: 0;
     height: 350px;
-    margin-right: 8px;
+    margin-right: 35px;
     border-radius:8px;
     margin-bottom: 60px;
+    display: inline-block;
+
     
-    
+        &:last-child{
+            margin-right: 0px;
+        }
 
 
-    img{
+        & img{
         height: 150px;
         width: 100%;
+       
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         
     }
 
-    p{
+        & p{
         font-weight: bold;
         color: #445566;
         text-align: center;
@@ -144,72 +149,59 @@
 }
 
 
-
-
-
-
-
-
-
-
 .registratura{
-   padding-top: 60px;
-   padding-bottom: 100px;
- 
+    padding-top: 80px;
+    padding-bottom:100px;
     .container{
-      
-   
-        
         .row{
-            .col-4{
-                padding-left: 70px;
-            }
-            h5{
+           
+            .col{
+                min-width: 440px;
+                min-height: 200px;
+                margin-top: 35px;
+                h5{
+                    padding: 15px;
+                    padding-left:0px ;
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                }
+                p{
+                    font-weight: 700;
+                    color:#778899;
+                }
+                .seeAll{
+                    background-color:#F8A23F;
+                    color: #fff;        
+                    padding: 15px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    
+                }
 
-                padding: 15px;
-                padding-left:0px ;
-                font-size: 24px;
-                font-weight: bold;
-                letter-spacing: 1.5px;
+                &:last-of-type h5{
+                    color: #fff;
+                }
                 
+                & img{
+                    padding-left: 70px;
+                }
             }
-        }
 
-        .col{
-            p{
-            font-weight: 700;
-            color: #778899;
-          }
-
-            .seeAll{
-                background-color:#F8A23F;
-                color: #fff;
-                
-                padding: 15px;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 1.5;
-                letter-spacing: 1px;
-                text-decoration: none;
-            }
+           
         }
     }
-   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// @media(min-width:991px){
+//     .registratura .row .col{
+//         margin-bottom: 55px;
+//         margin-right: 80px;
+//     }
+// }
 
 
 
@@ -218,25 +210,125 @@
 
 
 .socialMedia{
+    padding-top: 40px;
+    padding-bottom: 70px;
     background-color:#EFF5F5 ;
-    h5{
+    .container{
+        padding: 0;
+        
+        h5{
 
-        padding: 15px;
-        padding-left:0px ;
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 1.5px;
-        margin-bottom: 20px;
+            
+            padding-left:0px ;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            
+        }
+        .row{
+            margin: 0;
+
+            .col-3{
+                border-radius: 10px;
+
+
+                & > *{
+                    border-radius: 10px;
+                }
+                
+
+                &:nth-child(2){
+                   padding: 5px;
+                    width: 498px;
+                    object-fit: fill;
+                    margin: 0px 25px 0px 25px;
+
+                }
+
+                height: 100%;
+                background-color: #fff;
+                padding: 0;
+                width: 350px;
+               
+               
+                
+                &-instaWrap{
+                    text-decoration: none;
+                    
+                    display: inline-block;
+                    width: 100%;
+                    height: 20%;
+                    
+                }
+
+                &-instagram{
+                    
+                    padding: 10px;
+                    svg{
+                        margin-left: 10px;
+                    }
+                    p{
+                        display: inline-block;
+                        font-weight: bold;
+                        margin-left: 20px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+                &:first-of-type img{
+                    width: 100%;
+                    border-top-left-radius: 0px;           
+                    border-top-right-radius: 0px;    
+                    
+                }
+
+
+                &-youtubeWrap{
+                    background-color:#fff ;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    height: 20%;
+                    
+                    
+                }
+                &-youtube{
+                    padding: 10px;
+                    img{
+                        width:55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        
+                    }
+                    p{
+                        display: inline-block;
+                        font-weight: bold;
+                        margin-left: 20px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+                
+
+                iframe{
+                    width: 100%;
+                    margin-bottom: -10px;
+                    border-top-left-radius: 0px;           
+                    border-top-right-radius: 0px;           
+                    
+                }
+                
+            
+              
+        
+            }
+            
+        }
+
+
     }
+ 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -307,11 +399,6 @@
         }
     }
 }
-
-
-
-
-
 
 
 
