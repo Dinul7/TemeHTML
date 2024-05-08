@@ -3,26 +3,108 @@
   box-sizing: border-box;
   padding : 0;
   margin  : 0;
-
+  font-family: "open sans";
+  
 }
 
 
 .banner{
   background-color: #266e99;
   
+
+
   &-tab{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    padding: 12px;
+
+
     ul{
+      display: flex;
       list-style: none;
+      align-items: center;
+      gap: 15px;
+      height: 30px;
+     
+     
+      li{
+
+        
+        
+        font-weight: 500;
+        img{
+          height: 30px;
+          
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
+          font-size: 14px;
+          
+          line-height: 1.5;
+          
+          
+        }
+      }
+      .versiune-anterioara{
+        font-weight: lighter;
+      }
+
+      .orasul{
+
+        a{
+
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+
+      	
+    }
+    .utility-box{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #fff;
+
+    
+
+
+      .zoom-in-out{
+        display: flex;
+
+        &:first-child{
+          font-size: 10px;
+        }
+    
+      }
     }
   }
 
-  &-nav{
-    background-color: #fff;
-    color: #266e99;
-    list-style-type: none;
+  
+}
 
-    ul{
-      list-style: none;
+
+
+
+
+.nav{
+    
+   
+  background-color: #fff;
+  color: #266e99;
+  list-style-type: none;
+
+  ul{
+    display: flex;
+    list-style: none;
+    li{
+      a{
+        text-decoration: none;
+        color: #266e99;
+      }
     }
   }
 }
