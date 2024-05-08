@@ -15,8 +15,9 @@
 
   &-tab{
     display: flex;
+    
     justify-content: center;
-    gap: 400px;
+    gap: 295px;
     padding: 12px;
 
 
@@ -68,16 +69,25 @@
       align-items: center;
       gap: 20px;
       color: #fff;
-
+      font-size: 14px;
+      align-items: baseline;
+      i{
+        color: #c8dae5;
+      }
     
 
 
       .zoom-in-out{
         display: flex;
-
-        &:first-child{
-          font-size: 10px;
-        }
+        align-items: baseline;
+        font-size: 16px;
+        gap: 1px;
+       p:first-child{
+        font-size: 12px;
+       }
+       p:last-child{
+        font-size: 20px;
+       }
     
       }
     }
@@ -91,19 +101,48 @@
 
 
 .nav{
-    
-   
+  // padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
   color: #266e99;
   list-style-type: none;
-
+  justify-content: center;
+  // border-bottom: 1px solid black;
   ul{
     display: flex;
-    list-style: none;
+    padding: 15px;
+    // height: 100%;
     li{
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left:1px solid #266e99 ;
+      width: 100%;
+      
+      
+
+      &:first-child{
+        border: none;
+      }
+      &:nth-child(2){
+        border: none;
+      }
+      &:last-child{
+        border-right:1px solid #266e99 ;
+      }
+      img{
+        width: 110px;
+        height: 36px;
+      }
       a{
         text-decoration: none;
         color: #266e99;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding:0px 15px;
       }
     }
   }

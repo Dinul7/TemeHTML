@@ -9,7 +9,7 @@
   .banner-tab {
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 295px;
     padding: 12px; }
     .banner-tab ul {
       display: flex;
@@ -36,19 +36,50 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      color: #fff; }
+      color: #fff;
+      font-size: 14px;
+      align-items: baseline; }
+      .banner-tab .utility-box i {
+        color: #c8dae5; }
       .banner-tab .utility-box .zoom-in-out {
-        display: flex; }
-        .banner-tab .utility-box .zoom-in-out:first-child {
-          font-size: 10px; }
+        display: flex;
+        align-items: baseline;
+        font-size: 16px;
+        gap: 1px; }
+        .banner-tab .utility-box .zoom-in-out p:first-child {
+          font-size: 12px; }
+        .banner-tab .utility-box .zoom-in-out p:last-child {
+          font-size: 20px; }
 
 .nav {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
   color: #266e99;
-  list-style-type: none; }
+  list-style-type: none;
+  justify-content: center; }
   .nav ul {
     display: flex;
-    list-style: none; }
-    .nav ul li a {
-      text-decoration: none;
-      color: #266e99; }
+    padding: 15px; }
+    .nav ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid #266e99;
+      width: 100%; }
+      .nav ul li:first-child {
+        border: none; }
+      .nav ul li:nth-child(2) {
+        border: none; }
+      .nav ul li:last-child {
+        border-right: 1px solid #266e99; }
+      .nav ul li img {
+        width: 110px;
+        height: 36px; }
+      .nav ul li a {
+        text-decoration: none;
+        color: #266e99;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0px 15px; }
