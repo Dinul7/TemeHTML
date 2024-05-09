@@ -1,107 +1,86 @@
 // Test file
 * {
   box-sizing: border-box;
-  padding : 0;
-  margin  : 0;
+  padding: 0;
+  margin: 0;
   font-family: "open sans";
-  
+}
+body {
+  width: 100%;
 }
 
-
-.banner{
+.banner {
   background-color: #266e99;
-  
+  width: 100%;
 
-
-  &-tab{
+  &-tab {
     display: flex;
-    
+
     justify-content: center;
-    gap: 295px;
+    gap: 550px;
     padding: 12px;
 
-
-    ul{
+    ul {
       display: flex;
       list-style: none;
       align-items: center;
       gap: 15px;
       height: 30px;
-     
-     
-      li{
+      flex-shrink: 1;
 
-        
-        
+      li {
         font-weight: 500;
-        img{
+        img {
           height: 30px;
-          
         }
-        a{
+        a {
           text-decoration: none;
           color: #fff;
           font-size: 14px;
-          
+
           line-height: 1.5;
-          
-          
         }
       }
-      .versiune-anterioara{
+      .versiune-anterioara {
         font-weight: lighter;
       }
 
-      .orasul{
-
-        a{
-
+      .orasul {
+        a {
           display: flex;
           align-items: center;
           gap: 10px;
         }
       }
-
-      	
     }
-    .utility-box{
+    .utility-box {
       display: flex;
       align-items: center;
       gap: 20px;
       color: #fff;
       font-size: 14px;
       align-items: baseline;
-      i{
+      i {
         color: #c8dae5;
       }
-    
 
-
-      .zoom-in-out{
+      .zoom-in-out {
         display: flex;
         align-items: baseline;
         font-size: 16px;
         gap: 1px;
-       p:first-child{
-        font-size: 12px;
-       }
-       p:last-child{
-        font-size: 20px;
-       }
-    
+        p:first-child {
+          font-size: 12px;
+        }
+        p:last-child {
+          font-size: 20px;
+        }
       }
     }
   }
-
-  
 }
 
-
-
-
-
-.nav{
-  // padding: 8px;
+.nav {
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
@@ -109,40 +88,98 @@
   list-style-type: none;
   justify-content: center;
   // border-bottom: 1px solid black;
-  ul{
+  ul {
     display: flex;
-    padding: 15px;
+    padding: 10px;
     // height: 100%;
-    li{
-     
+    li {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left:1px solid #266e99 ;
+      border-left: 1px solid #266e99;
       width: 100%;
-      
-      
 
-      &:first-child{
+      &:first-child {
         border: none;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         border: none;
       }
-      &:last-child{
-        border-right:1px solid #266e99 ;
+      &:last-child {
+        border-right: 1px solid #266e99;
       }
-      img{
+      img {
         width: 110px;
         height: 36px;
       }
-      a{
+      a {
         text-decoration: none;
         color: #266e99;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: bolder;
         text-align: center;
-        padding:0px 15px;
+        padding: 0px 10px;
+        line-height: 1.3;
+        letter-spacing: 0.1px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.shuffle-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-image: url(https://api.pmb.ro/storage/sliders/December2021/R5KWOQbDs2fYhQ1cOZTs.jpg);
+}
+
+.flex-cls {
+  display: flex;
+}
+
+.mainpart {
+  display: flex;
+  justify-content: center;
+  background-color: #266e99;
+  &-shortcuts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    .row-1 {
+      display: flex;
+      font-size: 30px;
+      
+      gap: 10px;
+      & * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #266e99;
+        text-decoration: none;
+      }
+      & div{
+        border: 1px solid black;
+      }
+    }
+    .row-2 {
+      display: flex;
+      font-size: 30px;
+      justify-content: center;
+      gap: 10px;
+      
+      & * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #266e99;
+        text-decoration: none;
+        
+      }
+      & div{
+        border: 1px solid #333;
       }
     }
   }
