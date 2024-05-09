@@ -12,8 +12,7 @@ body {
   width: 100%; }
   .banner-tab {
     display: flex;
-    justify-content: center;
-    gap: 550px;
+    justify-content: space-between;
     padding: 12px; }
     .banner-tab ul {
       display: flex;
@@ -57,12 +56,9 @@ body {
           font-size: 20px; }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #fff;
   color: #266e99;
-  list-style-type: none;
-  justify-content: center; }
+  list-style-type: none; }
   .nav ul {
     display: flex;
     padding: 10px; }
