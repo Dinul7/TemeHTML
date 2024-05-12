@@ -118,13 +118,12 @@ body {
   display: flex;
   justify-content: center;
   background-color: #266e99;
-  position: relative;
   flex-direction: column; }
   .mainpart-shortcuts {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 3; }
+    margin-top: -110px; }
     .mainpart-shortcuts .row-1 {
       display: flex;
       font-size: 30px;
@@ -170,7 +169,45 @@ body {
           font-size: 20px;
           text-align: center; }
   .mainpart .mainpart-comunicat {
-    background-color: #266e99; }
+    background-color: #266e99;
+    padding: 70px 0 0 0;
+    width: 100%; }
+    .mainpart .mainpart-comunicat h3 {
+      color: #fff;
+      font-weight: bold;
+      font-size: 32px; }
+    .mainpart .mainpart-comunicat .row {
+      gap: 35px;
+      display: flex;
+      justify-content: space-between; }
+      .mainpart .mainpart-comunicat .row .col {
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        width: 380px; }
+        .mainpart .mainpart-comunicat .row .col .first-box {
+          background-image: url(https://api.pmb.ro/storage/press-releases/May2024/n0YN9IR3qapuv1ZElzzJ.jpg);
+          background-size: cover; }
+        .mainpart .mainpart-comunicat .row .col .second-box {
+          background-image: url(https://api.pmb.ro/storage/press-releases/May2024/AP7uz3qoygnsAaRq4sTQ.jpg);
+          background-size: cover; }
+        .mainpart .mainpart-comunicat .row .col .third-box {
+          background-image: url(https://api.pmb.ro/storage/press-releases/May2024/adLyPMxNuFKN1e2jCgPX.jpg);
+          background-size: cover; }
+        .mainpart .mainpart-comunicat .row .col a {
+          display: flex;
+          text-decoration: none; }
+          .mainpart .mainpart-comunicat .row .col a span {
+            padding-top: 5px;
+            margin-top: 120px;
+            color: #266e99;
+            background-color: #fff;
+            font-weight: bold;
+            font-size: 14px; }
+            .mainpart .mainpart-comunicat .row .col a span:hover {
+              text-decoration: underline; }
   .mainpart .mainpart-actualitate {
     padding: 30px 0 80px 0; }
     .mainpart .mainpart-actualitate h3 {
