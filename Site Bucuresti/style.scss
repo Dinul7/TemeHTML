@@ -518,23 +518,28 @@ body {
 
 .conferinte{
   background-color: #ebebeb;
-  padding-bottom:350px ;
+  padding:40px 0 60px 0;
   .container{
-    padding: 0;
+    padding: 10px;
     h3 {
       color: #266e99;
       font-size: 32px;
       font-weight: bold;
+      padding-bottom: 20px;
     }
 
     .row{
-
+      // padding: 15px;
+      // margin: 0;
+      margin-left:0 ;
       .conf-video{
         padding: 0;
         background-color: #fff;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         border: 1px solid #dee2e6;
+        height: fit-content;
         iframe{
           padding: 10px;
           width: 100%;
@@ -563,18 +568,19 @@ body {
           background-color: #fff;
           border: 1px solid #d7d7d7;
           height: 38px;
-          z-index: 1;
           a{
+            position: absolute;
             display: flex;
-            justify-content:space-between;
-            align-items: center;
+            // justify-content:space-around;
+            // align-items: center;
             text-decoration: none;
             padding: 8px 15px;
-            
+            width: 100%;
             &:hover{
               p{
                 color: #17425c;
               }
+             
             }
 
 
@@ -582,46 +588,83 @@ body {
               font-size: 14px;
               color:#266e99;
               font-weight: bold;
-              text-align: center;
+              z-index: 2;
               margin-bottom: 0;
+              
 
             
 
             }
-            .icons-wrapper{
-              position: absolute;
-              color: #d7d7d7;
-              font-size: 22px;
-              height: 35px;
-              padding-right:15px;
-              right: 0px;
-              top: 0;
-              z-index: 2;
-              
-              // background-color: red;
-
-              .fa-chevron-down:hover{
-                color: #17425c;
-              }
-              .fa-chevron-up:hover{
-                color: #17425c;
-
-               
-              }
-            }
+            
 
            
+          }
+          .icons-wrapper{
+            position: absolute;
+            color: #d7d7d7;
+            font-size: 22px;
+            height: 40px;
+            padding:0 15px;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            // background-color: red;
+
+            .fa-chevron-down:hover{
+              color: #17425c;
+              cursor: pointer;
+            }
+            .fa-chevron-up:hover{
+              color: #17425c;
+              cursor: pointer;
+
+
+             
+            }
           }
         }
 
         .box-wrapper{
-
-          .first-box{
-  
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .boxes {
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            display: flex;
+            // flex-direction: column;
+            gap: 15px;
             
-            img{
-              width: 165px;
-              height: 75px;
+            .img-wrapper{
+              padding: 10px;
+              img{
+                width: 165px;
+                
+              }
+             
+            }
+            .infos{
+              padding: 10px;
+              a{
+                text-decoration: none;
+                color: #266e99;
+                font-weight: bold;
+                font-size:16px;
+              
+              }
+              p{
+                padding-top: 5px;
+                font-size: 14px;
+
+                a{
+                  font-weight: normal;
+                }
+              }
+              
+              .date{
+                font-size: 12px;
+              }
+             
             }
           }
         }
@@ -632,4 +675,9 @@ body {
     
   }
  
+}
+
+.city{
+  background-image:url(https://www.pmb.ro/assets/img/bg-image-1.jpg);
+  height: 500px;
 }
