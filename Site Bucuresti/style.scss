@@ -780,27 +780,104 @@ body {
 }
 
 .programe{
-
+  padding-top: 400px;
+  padding-bottom: 250px;
   .container{
-
+    
     h3{
 
       color: #266e99;
       font-weight: bold;
     }
 
+  
+    
     .row{
-
       display: flex;
-      flex-direction: column;
+      background-color: #fff;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+      margin: 0;
+      
+      &:last-child{
+        justify-content: center;
+      }
 
-      .col{
-
-        .box{
-          border: 1px solid red;
-          text-decoration: none;
+      .box{
+        display: inline-flex;
+        border: 5px solid #fff;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 170px;
+        background-color: #266e99;
+       
+        p{
+          text-align: center;
+          color: #fff;
         }
+
+        i{
+          color: #fff;
+          font-size: 24px;
+        }
+        
+        
       }
     }
+
+
+
+
+
+    // .row{
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 10px;
+      
+
+    //   .col{
+    //    display: flex;
+    //    padding: 0;
+    //    justify-content: center;
+    //    gap: 10px;
+       
+    //    &:last-child{
+    //     justify-content: center;
+    //    }
+    //    .box{
+    //     width: 100%;
+    //     flex-flow: row wrap;
+    //     max-width: 210px;
+    //     height: 180px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background-color: #266e99;
+
+    //     &:hover{
+    //       background-color: #17425c;
+    //     }
+    //     a{
+    //       text-decoration: none;
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       justify-content: center;
+    //       color: #fff;
+    //       p{
+    //         text-align: center;
+    //         font-size: 20px;
+    //       }
+    //     }
+    //     i{
+    //       font-size: 50px;
+    //     }
+    //    }
+    //   }
+    // }
   }
 }
