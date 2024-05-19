@@ -586,8 +586,8 @@ body {
         .events .container .row .col .to-event a {
           text-decoration: none; }
           .events .container .row .col .to-event a p {
+            margin-right: 5px;
             height: 25px;
-            width: 50%;
             overflow-wrap: break-word;
             text-overflow: ellipsis;
             overflow: hidden;

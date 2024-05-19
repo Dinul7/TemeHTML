@@ -838,8 +838,9 @@ body {
             
 
             p{
+              margin-right: 5px;
               height: 25px;
-              width: 50%;
+              // width: 50%;
               overflow-wrap: break-word;
               text-overflow: ellipsis;
               overflow: hidden;
