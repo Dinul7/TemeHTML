@@ -515,6 +515,7 @@ body {
   padding-top: 60px;
   padding-bottom: 40px; }
   .programe .container h3 {
+    font-size: 32px;
     color: #266e99;
     font-weight: bold;
     padding-bottom: 15px; }
@@ -548,34 +549,49 @@ body {
 
 .events {
   background-color: #d7d7d7;
-  padding-top: 200px;
-  padding-bottom: 400px; }
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .events .container h3 {
+    font-size: 32px;
+    margin: 0;
+    color: #266e99;
+    font-weight: bold;
+    padding-bottom: 15px; }
   .events .container .row {
     justify-content: space-between;
     gap: 35px;
-    width: 100%; }
-    .events .container .row .col {
-      background-color: #fff;
-      width: 382px; }
-    .events .container .row .col {
+    width: 100%;
+    margin-left: 0;
+    position: relative; }
+    .events .container .row i {
+      color: #266e99;
+      font-size: 28px;
+      position: absolute;
+      top: 110px;
+      right: -1283px;
+      cursor: pointer; }
+      .events .container .row i:first-child {
+        top: 110px;
+        left: -30px; }
+    .events .container .row .col-4 {
       width: 382px;
       height: 275px;
       display: flex;
       flex-direction: column;
       padding: 0;
       background-color: #fff; }
-      .events .container .row .col a {
+      .events .container .row .col-4 a {
         overflow: hidden; }
-        .events .container .row .col a .wrapping-img img {
+        .events .container .row .col-4 a .wrapping-img img {
           width: 100%; }
-      .events .container .row .col .to-event {
+      .events .container .row .col-4 .to-event {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px; }
-        .events .container .row .col .to-event .event-date {
-          background-color: #17425c;
-          width: 100%;
+        .events .container .row .col-4 .to-event .event-date {
+          background-color: #266e99;
+          width: 155px;
           padding: 30px 15px;
           display: flex;
           justify-content: center;
@@ -583,12 +599,29 @@ body {
           margin-bottom: 0;
           color: #fff;
           border-top-right-radius: 25px; }
-        .events .container .row .col .to-event a {
-          text-decoration: none; }
-          .events .container .row .col .to-event a p {
-            margin-right: 5px;
+        .events .container .row .col-4 .to-event .title-wrapper {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          overflow: hidden; }
+          .events .container .row .col-4 .to-event .title-wrapper a {
+            text-decoration: none; }
+            .events .container .row .col-4 .to-event .title-wrapper a .title {
+              padding: 0 15px;
+              height: 25px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              font-weight: bold;
+              color: #266e99;
+              font-size: 14px;
+              margin: 0; }
+          .events .container .row .col-4 .to-event .title-wrapper p {
+            width: 100%;
+            padding: 0 15px;
             height: 25px;
-            overflow-wrap: break-word;
             text-overflow: ellipsis;
             overflow: hidden;
-            white-space: nowrap; }
+            white-space: nowrap;
+            margin: 0;
+            font-size: 14px; }

@@ -735,6 +735,7 @@ body {
   padding-bottom: 40px;
   .container {
     h3 {
+      font-size: 32px;
       color: #266e99;
       font-weight: bold;
       padding-bottom: 15px;
@@ -782,28 +783,50 @@ body {
 
 .events {
   background-color: #d7d7d7;
-  padding-top: 200px;
-  padding-bottom: 400px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   
   .container {
     
-
+    h3{
+      font-size: 32px;
+      margin: 0;
+      color: #266e99;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
 
     .row{
       justify-content: space-between;
       gap: 35px;
       width: 100%;
-      .col{
-        background-color:#fff;
-        width: 382px;
+      margin-left: 0;
+      position: relative;
+      i{
+        color: #266e99;
+        font-size: 28px;
+        position: absolute;
+        top: 110px;
+        right: -1283px;
+        cursor: pointer;
+
+        &:first-child{
+          top: 110px;
+          left: -30px;
+        }
+       
+        
+
       }
-      .col {
+      .col-4 {
         width: 382px;
         height: 275px;
         display: flex;
         flex-direction: column;
         padding: 0;
         background-color: #fff;
+        
+      
         
         a {
           overflow: hidden;
@@ -821,8 +844,8 @@ body {
           align-items: center;
           gap: 10px;
           .event-date{
-            background-color: #17425c;
-            width: 100%;
+            background-color: #266e99;
+            width: 155px;
             padding: 30px 15px;
             display: flex;
             justify-content: center;
@@ -832,19 +855,42 @@ body {
             border-top-right-radius: 25px;
           }
 
-          a{
-            
-            text-decoration: none;
-            
+          .title-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            a{
+              
+              text-decoration: none;
+              
+  
+              .title{
+                
+                padding: 0 15px;
+                height: 25px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #266e99;
+                font-size: 14px;
+                margin: 0;
+              }
+
+              
+            }
 
             p{
-              margin-right: 5px;
+              width: 100%;
+              padding: 0 15px;
               height: 25px;
-              // width: 50%;
-              overflow-wrap: break-word;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              
+              margin: 0;
+              font-size: 14px;
             }
           }
         }
