@@ -899,3 +899,294 @@ body {
     }
   }
 }
+
+.smart-city{
+  background-image:url(https://www.pmb.ro/assets/img/bg-image-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fill;
+
+
+  .container{
+
+    h3{
+      font-size: 32px;
+      margin: 0;
+      color: #fff;
+      font-weight: bold;
+      padding: 40px 0 20px 0 ;
+    }
+
+
+    .row{
+     padding-bottom: 60px;
+
+      .col{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+
+
+        .app{
+          display: flex;
+          // gap: 30px;
+          flex-direction: column;
+
+
+          p{
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+          }
+
+
+          .app-wrapper{
+            display: flex;
+            gap: 30px;
+            padding-bottom: 20px;
+
+          
+            a{
+  
+  
+              img{
+                width: 65px;
+                height: 65px;
+              }
+            }
+            .magazine{
+             display: flex;
+             flex-direction: column;
+              justify-content: space-between;
+              a{
+  
+  
+                img{
+  
+                  width: 65px;
+                  height: 20px;
+                }
+              }
+            }
+
+
+          
+          }
+
+
+
+        }
+
+      }
+    }
+  }
+}
+
+
+.parteneri{
+  .container{
+    padding-top: 60px;
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+      
+
+      &:last-child{
+        padding-top: 25px;
+      
+      }
+      .col{
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          gap: 0;
+
+      
+        a{
+          
+          img{
+            height:130px;
+            
+          }
+        }
+      }
+
+     
+
+
+
+      
+    }
+  }
+}
+
+
+footer{
+  background-color:#4f4f4f;
+  
+  .container{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    .row{
+      padding-bottom: 10px;
+      .col{
+
+        img{
+          width: 150px;
+
+
+          &:first-child{
+            padding-bottom: 30px;
+          }
+        }
+
+        h5{
+          font-size: 16px;
+          color: #fff;
+          padding-bottom: 25px;
+        }
+
+        ul{
+          list-style: none;
+          font-size: 14px;
+          
+          a{
+            color: #fff;
+            text-decoration: none;
+
+            &:hover{
+              color: #adb5bd;
+            }
+          }
+
+          img{
+            padding-top: 40px;
+          }
+        }
+
+        .contact{
+          h5{
+            font-size: 16px;
+            font-weight: bold;
+          }
+          ul{
+            font-size: 14px;
+            list-style: none;
+            color: #fff;
+            
+            a{
+              color: #fff;
+              text-decoration: none;
+              display: block;
+              font-weight: lighter;
+            }
+
+            li{
+              padding: 10px 0;
+              
+            }
+
+           
+          }
+        }
+
+        .social-wrapper{
+          display: flex;
+          
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: #fff;
+
+
+          &:hover{
+
+            p{
+              color: #adb5bd;
+            }
+          }
+          i{
+            font-size: 40px;
+          }
+        
+          h5{
+            padding: 0;
+            margin:0;
+          }
+
+          .social-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            gap: 5px;
+
+            p{
+              margin-bottom: 0;
+              font-size: 14px;
+              font-weight: lighter;
+            }
+          }
+
+          
+        }
+      }
+    }
+
+
+
+
+
+
+    
+  }
+}
+.prelucrarea-datelor{
+  background-color:#1f1f1f;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 25px 0;
+  position: relative;
+  
+  .back-to-top{
+    background-color: #266e99;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: -55px;
+    right:150px;
+    border-radius: 5px;
+    i{
+      font-size: 30px;
+      padding: 5px;
+    }
+
+
+    &:hover{
+      background-color: #17425c;
+
+      i{
+        color: #fff;
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+
+    &:hover{
+      color: #adb5bd;
+    }
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+
+ 
+}
