@@ -18,7 +18,7 @@
       .top-navbar .container ul li {
         height: 20px; }
         .top-navbar .container ul li a {
-          color: #FEFAEC;
+          color: #fefaec;
           text-decoration: none;
           font-size: 16px;
           font-weight: 400;
@@ -27,7 +27,57 @@
 
 .hero-slider {
   background-image: url(./pastificio-photos/Image.jpg);
-  height: 952px; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 952px;
+  display: flex;
+  align-items: center; }
+  .hero-slider .container p {
+    font-family: "Nobile", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    width: 794px;
+    height: 130px;
+    color: #fefaec;
+    margin-bottom: 48px; }
+  .hero-slider .container a {
+    display: inline-block;
+    padding: 18px 24px;
+    background-color: #db9f55;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px; }
+
+.value-section {
+  background-color: #1c1c1c;
+  height: 414px;
+  display: flex;
+  align-items: center; }
+  .value-section .container .col-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .value-section .container .col-wrapper .card {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      background-color: #1c1c1c;
+      justify-content: center;
+      gap: 66px; }
+      .value-section .container .col-wrapper .card .img-wrapper {
+        display: flex;
+        justify-content: center; }
+      .value-section .container .col-wrapper .card p {
+        font-family: "Mulish", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fefaec;
+        margin-bottom: 0; }
 
 .most-popular {
   background-color: #1c1c1c;
@@ -96,3 +146,16 @@
             width: 24px;
             height: 24px;
             border: none; }
+
+.scope {
+  height: 554px;
+  background-image: url(./pastificio-photos/scopebackground.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .scope .container h2 {
+    font-family: "Nobile", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #fefaec; }
