@@ -1,0 +1,150 @@
+<script>
+    /*Exerciții cu for */
+
+
+    /*1. Calcularea sumei numerelor impare de la 1 la 15:
+    exemplu output: (1+3+5+7+9+11+13+15 =) 64  */
+    sum=0;
+    for(i=1; i<=15;i++){
+        if(i%2 != 0){
+            sum+=i
+        }
+    }
+    console.log(sum)
+
+
+    /*2. Numărarea literelor 'a' într-un string.
+    exemplu: “Salut sunt Laura” Output: 3  */
+
+    exempluString='Salut sunt Laura';
+    literaA=0;
+    for(i=0;i<exempluString.length;i++){
+        if(exempluString[i]== 'a'){
+            literaA++
+        }
+    }
+    console.log(literaA)
+
+    /*Calculati produsul primelor 5 numere întregi.
+    exemplu output: (1*2*3*4*5 =) 120 */
+
+    produs=1;
+    for(i=1;i<=5;i++){
+        produs*=i
+        
+    }
+    console.log(produs)
+
+
+
+
+      /*Exerciții cu function*/
+
+
+      /*4. O functie pt calcularea cubului unui număr
+      Input: cubulNumarului(7) Output:  343*/
+        function cubulNumarului(numar){
+            suma=numar*numar*numar
+        }
+        cubulNumarului(7)
+        console.log(suma)
+
+      /*5. O funcție pt găsirea numărului de litere specificate dintr-un text
+      Input:  functieLitere(“alune uscate”, “e”) Output: 2  */
+
+    //   fraza='alune uscate'
+    //   literaE=0;
+        nrLitere=0;
+
+      function functieLitere(fraza, litera){
+        for(i=0;i<fraza.length;i++){
+            if(fraza[i]==litera)
+            nrLitere++
+            // console.log('Aici e litera E')
+        }
+      }
+      functieLitere('alune uscate','e')
+      console.log(nrLitere)
+
+
+
+      /*6. O functie pt calcularea produsul primelor X numere întregi.
+      Input:  functieProdusNumere(“5”) Output: 120 */
+
+      prod=1;
+
+      function functieProdusNumere(numar){
+        for(i=1;i<=numar;i++){
+            prod*=i
+        }
+      }
+      functieProdusNumere(5)
+      console.log(prod)
+
+
+
+
+      /*Exerciții cu array */
+
+      /*7.  Se da un array, de cate ori se gaseste stringul“Salut” in el?
+      Input:  [‘Salut’, 2, ‘Dacia’] Output: 1    */
+
+
+      const arr=['Salut',2,'Dacia']
+      nrSalut=0;
+
+      arr.forEach(function(elementulCurent){
+          console.log(elementulCurent)
+        if(elementulCurent== 'Salut')
+            nrSalut++
+      })
+
+    console.log(nrSalut)
+
+
+
+
+      /*8. Se da un array, care este produsul numerelor din acesta?
+      Input:  [10, 20, 1, 2] Output: 400*/
+
+      const arr2=[10, 20, 1, 2];
+      produsArr=1;
+
+      arr2.forEach(function(numarCurent){
+        produsArr*=numarCurent;
+      })
+      console.log(produsArr)
+
+
+      
+      /*9. Se da un array de stringuri, de cate ori se gaseste litera “a” in array?
+      Input:  [‘baobab’, ‘calculator’] Output: 4 */
+
+      const arr3=['baobab','calculator'];
+      litA=0;
+
+
+      arr3.forEach(function(elCurent){
+        for(i=0;i<elCurent.length;i++){
+            if(elCurent[i]=='a'){
+                litA++
+            }
+        }
+      })
+
+      console.log(litA)
+
+
+
+
+
+
+    /*10. Se da un array de stringuri si un cuvant. Se gaseste acest cuvant in array?
+    Input:  [“ALUNA” ,”PORSCHE”], “ALUNA” Output: true*/
+
+   
+    const arr4=['ALUNA','PORSCHE']
+    const cuv='ALUNA'
+    console.log(arr4.includes(cuv))
+    
+</script>
