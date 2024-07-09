@@ -57,13 +57,18 @@
         nrLitere=0;
 
       function functieLitere(fraza, litera){
+        nrLitere=0; //pentru a reseta counterul de fiecare data cand dai call la functie
         for(i=0;i<fraza.length;i++){
             if(fraza[i]==litera)
             nrLitere++
             // console.log('Aici e litera E')
         }
+
+        return nrLitere;
       }
       functieLitere('alune uscate','e')
+      console.log(nrLitere)
+      functieLitere('Salut sunt Laura','a')
       console.log(nrLitere)
 
 
