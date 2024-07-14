@@ -50,14 +50,15 @@ Exemple:
 
 
 function stergeElement(arr,element){
-    arr=arr.filter(function(el){
-        !element.includes(el)
-    })
+  let newArr=[]
 
+ arr.filter(function(el){
+  if(el != element){
+    newArr.push(el)
+  }
+ })
+ console.log(newArr)
 }
-console.log(arr)
-
-
 
 stergeElement([1,2,3,4], [3]) 
 /* */
