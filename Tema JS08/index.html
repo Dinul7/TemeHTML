@@ -57,7 +57,7 @@
         nrLitere=0;
 
       function functieLitere(fraza, litera){
-        nrLitere=0; //pentru a reseta counterul de fiecare data cand dai call la functie
+       var nrLitere=0; //pentru a reseta counterul de fiecare data cand dai call la functie cu var!
         for(i=0;i<fraza.length;i++){
             if(fraza[i]==litera)
             nrLitere++
